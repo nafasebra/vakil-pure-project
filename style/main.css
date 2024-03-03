@@ -1,4 +1,4 @@
---root {
+:root {
   --bg-gray-light: #252C36;
   --bg-gray-dark: #171E29;
   --bg-orange-light: #D09560;
@@ -19,13 +19,22 @@ body,
 html {
   margin: 0;
   padding: 0;
-  font-family: sans-serif; /* Your preferred default font */
+  font-family: "Vazirmatn", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 ul,
 ol {
-  padding-left: 0;
+  padding: 0;
+  margin: 0;
   list-style: none;
+}
+
+p {
+  margin: 0;
 }
 
 a {
@@ -45,4 +54,11 @@ img {
 }
 .bg_gray__dark {
   background-color: var(--bg-gray-dark)
+}
+.social-media__link {
+  color: white;
+  transition: opacity 250ms;
+}
+.social-media__link:hover {
+  opacity: 0.75;
 }
