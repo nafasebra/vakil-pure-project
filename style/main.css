@@ -1,0 +1,48 @@
+--root {
+  --bg-gray-light: #252C36;
+  --bg-gray-dark: #171E29;
+  --bg-orange-light: #D09560;
+  --bg-orange-main: #E88F1E;
+  --bg-orange-dark: #c8874c;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif; /* Your preferred default font */
+}
+
+ul,
+ol {
+  padding-left: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit; /* Inherit text color from parent */
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+
+.bg_gray__light {
+  background-color: var(--bg-gray-light)
+}
+.bg_gray__dark {
+  background-color: var(--bg-gray-dark)
+}
