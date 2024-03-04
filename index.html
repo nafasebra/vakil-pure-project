@@ -1,226 +1,318 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>صفحه اصلی | وکیل دادگستر</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>صفحه اصلی | وکیل دادگستر</title>
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css"
+      integrity="sha384-dpuaG1suU0eT09tx5plTaGMLBsfDLzUCCUXOY2j/LSvXYuG6Bqs43ALlhIqAJVRb"
+      crossorigin="anonymous"
+    />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="stylesheet" href="style/all.min.css">
-  <link rel="stylesheet" href="style/fontawesome.min.css">
-  <link rel="stylesheet" href="style/main.css" />
-</head>
-<body>
-  <nav>
-    <div class="d-none d-md-block bg_gray__light py-2 text_xs">
-      <div class="container d-flex align-items-center justify-content-between text-light">
-        <div class="d-flex align-items-center gap-3">
-          <div class="d-flex align-items-center gap-2">
-            <i class="fa-solid fa-phone"></i>
-            <p>شماره تماس جهت مشاوره : 09111773575</p>
+    <link rel="stylesheet" href="style/all.min.css" />
+    <link rel="stylesheet" href="style/fontawesome.min.css" />
+    <link rel="stylesheet" href="style/main.css" />
+    <link rel="stylesheet" href="style/boostrap.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="d-none d-md-block bg_gray__light py-2 text_xs">
+        <div
+          class="container d-flex align-items-center justify-content-between text-light"
+        >
+          <div class="d-flex align-items-center gap-3">
+            <div class="d-flex align-items-center gap-2">
+              <i class="fa-solid fa-phone"></i>
+              <p>شماره تماس جهت مشاوره : 09111773575</p>
+            </div>
+            <div class="d-flex align-items-center gap-2">
+              <i class="fa-regular fa-clock"></i>
+              <p>ساعات کاری : 16 تا 21</p>
+            </div>
           </div>
-          <div class="d-flex align-items-center gap-2">
-            <i class="fa-regular fa-clock"></i>
-            <p>ساعات کاری : 16 تا 21</p>
-          </div>
+          <ul class="d-flex align-items-center gap-3 text_lg">
+            <li>
+              <a href="#" class="social-media__link">
+                <i class="fa-brands fa-telegram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="social-media__link">
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="social-media__link">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
+          </ul>
         </div>
-        <ul class="d-flex align-items-center gap-3 text_lg">
+      </div>
+      <div class="bg_gray__dark py-4">
+        <div
+          class="container d-flex flex-column flex-lg-row align-items-center justify-content-between gap-4 gap-lg-5"
+        >
+          <a href="index.html" class="navbar-brand">
+            <img src="assets/images/logo.png" />
+          </a>
+          <div class="flex-grow-1">
+            <form class="search_wrap_box" method="get">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input
+                type="text"
+                id="search-box-key"
+                class="search-field"
+                value=""
+                name="s"
+                placeholder="کلید واژه مورد نظر ..."
+              />
+            </form>
+          </div>
+          <a href="#" class="btn_orange">
+            <i class="fas fa-balance-scale-right"></i>
+            <span>بسته های مشاوره</span>
+          </a>
+        </div>
+      </div>
+      <!-- menu desktop -->
+      <div class="d-none d-lg-block bg_orange__light">
+        <ul class="container d-flex align-items-center">
           <li>
-            <a href="#" class="social-media__link">
-              <i class="fa-brands fa-telegram"></i>
+            <a href="#" class="navbar__link-item active">
+              <i class="fa-solid fa-home"></i>
+              <span>صفحه اصلی</span>
             </a>
           </li>
           <li>
-            <a href="#" class="social-media__link">
-              <i class="fa-brands fa-whatsapp"></i>
+            <a href="#" class="navbar__link-item">
+              <span>خدمات حقوقی ما</span>
             </a>
           </li>
           <li>
-            <a href="#" class="social-media__link">
-              <i class="fa-brands fa-instagram"></i>
+            <a href="#" class="navbar__link-item">
+              <span>مقالات حقوقی</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="navbar__link-item">
+              <span>اوراق قضایی و نمونه قراردادها</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="navbar__link-item">
+              <span>تازه های حقوقی</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="navbar__link-item">
+              <span>درباره ما</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="navbar__link-item">
+              <span>ارتباط با وکیل</span>
             </a>
           </li>
         </ul>
       </div>
-    </div>
-    <div class="bg_gray__dark py-4">
-      <div class="container d-flex flex-column flex-lg-row align-items-center justify-content-between gap-4 gap-lg-5">
-        <a href="index.html" class="navbar-brand">
-          <img src="assets/images/logo.png"  />
-        </a>
-        <div class="flex-grow-1">
-          <form class="search_wrap_box" method="get">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <input type="text" id="search-box-key" class="search-field" value="" name="s" placeholder="کلید واژه مورد نظر ...">
-          </form>
-        </div>
-        <a href="#" class="btn_orange">
-          <i class="fas fa-balance-scale-right"></i>
-          <span>بسته های مشاوره</span>
-        </a>
-      </div>
-    </div>
-    <!-- menu desktop -->
-    <div class="d-none d-lg-block bg_orange__light">
-      <ul class="container d-flex align-items-center">
-        <li>
-          <a href="#" class="navbar__link-item active">
-            <i class="fa-solid fa-home"></i>
-            <span>صفحه اصلی</span>
-          </a>
-        </li>
-        <li>
-          <a href="#" class="navbar__link-item">
-            <span>خدمات حقوقی ما</span>
-          </a>
-        </li>
-        <li>
-          <a href="#" class="navbar__link-item">
-            <span>مقالات حقوقی</span>
-          </a>
-        </li>
-        <li>
-          <a href="#" class="navbar__link-item">
-            <span>اوراق قضایی و نمونه قراردادها</span>
-          </a>
-        </li>
-        <li>
-          <a href="#" class="navbar__link-item">
-            <span>تازه های حقوقی</span>
-          </a>
-        </li>
-        <li>
-          <a href="#" class="navbar__link-item">
-            <span>درباره ما</span>
-          </a>
-        </li>
-        <li>
-          <a href="#" class="navbar__link-item">
-            <span>ارتباط با وکیل</span>
-          </a>
-        </li>
-      </ul>
-    </div>
-    <!-- menu mobile -->
-    <div class="d-flex d-lg-none bg_orange__light">
-      <div class="container">
-        <button type="button" class="btn__mobile-menu--open">
-          <i class="fa-solid fa-bars"></i>
-          <span>فهرست</span>
-        </button>
-      </div>
-    </div>
-  </nav>
-  
-  <header></header>
-
-  <main></main>
-
-  <footer class="footer__container">
-    <div class="footer__main">
-      <div class="container">
-        <div class="row py-5 px-3 px-lg-0">
-          <div class="col-sm-12 col-lg-2">
-            <p class="footer__text-head">دسترسی سریع</p>
-            <ul class="footer__links">
-              <li>
-                <span></span>
-                <a href="#">صفحه اصلی</a>
-              </li>
-              <li>
-                <span></span>
-                <a href="#">ویدیو های حقوقی</a>
-              </li>
-              <li>
-                <span></span>
-                <a href="#">پادکست ها</a>
-              </li>
-              <li>
-                <span></span>
-                <a href="#">نشانی مراجع قضائی و ادارات مربوطه</a>
-              </li>
-              <li>
-                <span></span>
-                <a href="#">قوانین و مقررات</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-sm-12 col-lg-3">
-            <p class="footer__text-head">آخرین ارسالی ها</p>
-            <div class="d-flex flex-column gap-4">
-              <a href="#" class="footer__post-item">
-                <div class="d-flex align-items-center gap-2">
-                  <i class="fa-regular fa-note-sticky"></i>
-                  <p class="footer__post-title">ابلاغ مصوبه مربوط به خرید توافقی و حمایتی محصولات کشاورزی</p>
-                </div>
-                <p class="footer__post-date">4 اردیبهشت 1400</p>
-              </a>
-              <a href="#" class="footer__post-item">
-                <div class="d-flex align-items-center gap-2">
-                  <i class="fa-regular fa-note-sticky"></i>
-                  <p class="footer__post-title">ابلاغ مصوبه مربوط به خرید توافقی و حمایتی محصولات کشاورزی</p>
-                </div>
-                <p class="footer__post-date">4 اردیبهشت 1400</p>
-              </a>
-              <a href="#" class="footer__post-item">
-                <div class="d-flex align-items-center gap-2">
-                  <i class="fa-regular fa-note-sticky"></i>
-                  <p class="footer__post-title">ابلاغ مصوبه مربوط به خرید توافقی و حمایتی محصولات کشاورزی</p>
-                </div>
-                <p class="footer__post-date">4 اردیبهشت 1400</p>
-              </a>
-            </div>
-          </div>
-          <div class="col-sm-12 col-lg-3">
-            <p class="footer__text-head">درباره ما</p>
-            <p class="text_sm footer__gray-text">دفتر وکالت علی اصغر احمدی و همکاران با حدود ۲۰ سال تجربه تحت نظر دکتر علی اصغر احمدی وکیل پایه یک دادگستری شروع به فعالیت نموده و حاصل این ۲۰ سال تجربه صدها پرونده موفق در امور مختلف حقوقی و قضایی می باشد ، ارائه مشاوره های متعدد حضوری و غیر حضوری و انعقاد قرارداد مشاوره ، پاسخگویی مناسب ، مستمر و صادقانه در مدیریت قراردادهای وکالت از ویژگی های این دفتر بوده که نشان از وجه تمایز این مجموعه می باشد .</p>
-          </div>
-          <div class="col-sm-12 col-lg-4">
-            <p class="footer__text-head">ارتباط با ما</p>
-            <div class="d-flex flex-column gap-3">
-              <div class="footer__contact-item">
-                <i class="fa-solid fa-location-dot"></i>
-                <p>آدرس دفتر گنبدکاووس : خ طالقانی شرقی - روبروی آموزش و پرورش - کوچه مساوات - مجتمع شقایق ۲ - طبقه سوم - واحد ۸ - آدرس دفتر گرگان : جاده نهارخوران - ابتدای بلوار گلشهر </p>
-              </div>
-              <div class="footer__contact-item">
-                <i class="fa-solid fa-phone"></i>
-                <p>
-                  <span class="text_orange__light">0911</span>1773575 - ساعات کاری 16 تا 21
-                </p>
-              </div>
-              <div class="footer__contact-email">
-                <div class="icon">
-                  <i class="fa-solid fa-at"></i>
-                </div>
-                <p>aliasghar.ahmaadi@gmail.com</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <ul>
-          <li>
-            <a></a>
-          </li>
-        </ul>
-      </div>
-      <div class="footer__copyright py-3 px-2 px-lg-0">
-        <div class="container footer__copyright-main">
-          <p class="text_xs">کلیه حقوق مادی و معنوی برای این سایت محفوظ می باشد.</p>
-          <button type="button" class="btn_gotoup">
-            <span>رفتن به بالا</span>
-            <i class="fa-solid fa-chevron-up"></i>
+      <!-- menu mobile -->
+      <div class="d-flex d-lg-none bg_orange__light">
+        <div class="container">
+          <button
+            data-bs-toggle="offcanvas"
+            data-bs-target="#drawer"
+            aria-controls="drawer"
+            class="btn__mobile-menu--open"
+          >
+            <i class="fa-solid fa-bars"></i>
+            <span>فهرست</span>
           </button>
         </div>
       </div>
-    </div>
-  </footer>
+    </nav>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  <script src="script/main.js"></script>
-</body>
+    <nav
+      class="offcanvas-lg d-lg-none offcanvas-start"
+      tabindex="-1"
+      id="drawer"
+      aria-label="drawer menu"
+    >
+      <div class="offcanvas-header custom-offcanvas-header">
+        <button
+          class="btn-close"
+          data-bs-target="#drawer"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body custom-offcanvas-body">
+        <div class="link-list" role="list">
+          <div class="link-list__item" role="listitem">
+            <a href="#">صفحه اصلی</a>
+          </div>
+          <div class="link-list__item" role="listitem">
+            <a href="#">خدمات حقوقی ما</a>
+          </div>
+          <div class="link-list__collapse" role="listitem">
+            <a href="#">مقالات حقوقی</a>
+            <button
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse1"
+              aria-expanded="false"
+              aria-controls="collapse1"
+            >
+              <i class="fas fa-xs fa-chevron-down"></i>
+              <i class="fas fa-xs fa-chevron-left"></i>
+            </button>
+          </div>
+          <div role="list" class="link-list collapse" id="collapse1">
+            <div class="link-list__item" role="listitem">
+              <a href="#">املاک</a>
+            </div>
+            <div class="link-list__item" role="listitem">
+              <a href="#">خانواده</a>
+            </div>
+            <div class="link-list__item" role="listitem">
+              <a href="#">شرکت</a>
+            </div>
+            <div class="link-list__item" role="listitem">
+              <a href="#">بیمه</a>
+            </div>
+          </div>
+          <div class="link-list__item" role="listitem">
+            <a href="#">اوراق قضایی و نمونه قرارداد ها</a>
+          </div>
+          <div class="link-list__item" role="listitem">
+            <a href="#">تازه های حقوقی</a>
+          </div>
+          <div class="link-list__item" role="listitem">
+            <a href="#">درباره ما</a>
+          </div>
+          <div class="link-list__item" role="listitem">
+            <a href="#">ارتباط با وکیل</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main></main>
+
+    <footer class="footer__container">
+      <div class="footer__main">
+        <div class="container">
+          <div class="row py-5 px-3 px-lg-0">
+            <div class="col-sm-12 col-lg-2">
+              <p class="footer__text-head">دسترسی سریع</p>
+              <ul class="footer__links">
+                <li>
+                  <span></span>
+                  <a href="#">صفحه اصلی</a>
+                </li>
+                <li>
+                  <span></span>
+                  <a href="#">ویدیو های حقوقی</a>
+                </li>
+                <li>
+                  <span></span>
+                  <a href="#">پادکست ها</a>
+                </li>
+                <li>
+                  <span></span>
+                  <a href="#">نشانی مراجع قضائی و ادارات مربوطه</a>
+                </li>
+                <li>
+                  <span></span>
+                  <a href="#">قوانین و مقررات</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-sm-12 col-lg-3">
+              <p class="footer__text-head">آخرین ارسالی ها</p>
+              <div class="d-flex flex-column gap-4">
+                <a href="#" class="footer__post-item">
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="fa-regular fa-note-sticky"></i>
+                    <p class="footer__post-title">ابلاغ مصوبه مربوط به خرید توافقی و حمایتی محصولات کشاورزی</p>
+                  </div>
+                  <p class="footer__post-date">4 اردیبهشت 1400</p>
+                </a>
+                <a href="#" class="footer__post-item">
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="fa-regular fa-note-sticky"></i>
+                    <p class="footer__post-title">ابلاغ مصوبه مربوط به خرید توافقی و حمایتی محصولات کشاورزی</p>
+                  </div>
+                  <p class="footer__post-date">4 اردیبهشت 1400</p>
+                </a>
+                <a href="#" class="footer__post-item">
+                  <div class="d-flex align-items-center gap-2">
+                    <i class="fa-regular fa-note-sticky"></i>
+                    <p class="footer__post-title">ابلاغ مصوبه مربوط به خرید توافقی و حمایتی محصولات کشاورزی</p>
+                  </div>
+                  <p class="footer__post-date">4 اردیبهشت 1400</p>
+                </a>
+              </div>
+            </div>
+            <div class="col-sm-12 col-lg-3">
+              <p class="footer__text-head">درباره ما</p>
+              <p class="text_sm footer__gray-text">دفتر وکالت علی اصغر احمدی و همکاران با حدود ۲۰ سال تجربه تحت نظر دکتر علی اصغر احمدی وکیل پایه یک دادگستری شروع به فعالیت نموده و حاصل این ۲۰ سال تجربه صدها پرونده موفق در امور مختلف حقوقی و قضایی می باشد ، ارائه مشاوره های متعدد حضوری و غیر حضوری و انعقاد قرارداد مشاوره ، پاسخگویی مناسب ، مستمر و صادقانه در مدیریت قراردادهای وکالت از ویژگی های این دفتر بوده که نشان از وجه تمایز این مجموعه می باشد .</p>
+            </div>
+            <div class="col-sm-12 col-lg-4">
+              <p class="footer__text-head">ارتباط با ما</p>
+              <div class="d-flex flex-column gap-3">
+                <div class="footer__contact-item">
+                  <i class="fa-solid fa-location-dot"></i>
+                  <p>آدرس دفتر گنبدکاووس : خ طالقانی شرقی - روبروی آموزش و پرورش - کوچه مساوات - مجتمع شقایق ۲ - طبقه سوم - واحد ۸ - آدرس دفتر گرگان : جاده نهارخوران - ابتدای بلوار گلشهر </p>
+                </div>
+                <div class="footer__contact-item">
+                  <i class="fa-solid fa-phone"></i>
+                  <p>
+                    <span class="text_orange__light">0911</span>1773575 - ساعات کاری 16 تا 21
+                  </p>
+                </div>
+                <div class="footer__contact-email">
+                  <div class="icon">
+                    <i class="fa-solid fa-at"></i>
+                  </div>
+                  <p>aliasghar.ahmaadi@gmail.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ul>
+            <li>
+              <a></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__copyright py-3 px-2 px-lg-0">
+          <div class="container footer__copyright-main">
+            <p class="text_xs">کلیه حقوق مادی و معنوی برای این سایت محفوظ می باشد.</p>
+            <button type="button" class="btn_gotoup">
+              <span>رفتن به بالا</span>
+              <i class="fa-solid fa-chevron-up"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script/main.js"></script>
+  </body>
 </html>
