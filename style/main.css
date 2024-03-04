@@ -15,6 +15,14 @@
   background-repeat: no-repeat;
 }
 
+button {
+  font-size: 13px;
+}
+
+input, textarea {
+  font-family: "Vazirmatn", sans-serif;
+}
+
 body,
 html {
   margin: 0;
@@ -58,6 +66,15 @@ img {
 .bg_orange__light {
   background-color: var(--bg-orange-light)
 }
+.text_lg {
+  font-size: 1.1rem;
+}
+.text_sm {
+  font-size: 0.85rem;
+}
+.text_xs {
+  font-size: 0.75rem;
+}
 
 .navbar__link-item {
   display: flex;
@@ -79,6 +96,45 @@ img {
 .social-media__link:hover {
   opacity: 0.75;
 }
+.search_wrap_box {
+  width: 400px;
+  position: relative;
+  align-self: self-start;
+}
+.search_wrap_box i {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ccc;
+}
+.search_wrap_box input {
+  background-color: var(--bg-gray-light);
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 9px -5px rgba(0,0,0,.2);
+  padding: 12px 50px 12px 16px;
+  border: none;
+  outline: none;
+  color: #eee;
+  font-size: 11px;
+  -webkit-transition: all .25s ease-out;
+  -o-transition: all .25s ease-out;
+  transition: all .25s ease-out;
+}
+.btn__mobile-menu--open {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 16px;
+  color: white;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+.btn__mobile-menu--open i {
+  font-size: 1.1rem;
+}
 
 .btn_orange {
   border: none;
@@ -86,7 +142,7 @@ img {
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  padding: 10px 30px 10px 30px;
+  padding: 10px 24px;
   background-color: var(--bg-orange-main);
   color: white;
   transition: opacity 250ms;
