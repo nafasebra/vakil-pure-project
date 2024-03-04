@@ -1,7 +1,7 @@
 ## tasks
 
 - [x] initial project
-- [ ] add and import fonts
+- [x] add and import fonts
 - [ ] create navbar and menu 
 - [ ] responsive navbar and menu
 - [ ] create footer + responsive
