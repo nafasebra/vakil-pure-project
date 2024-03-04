@@ -66,6 +66,9 @@ img {
 .bg_orange__light {
   background-color: var(--bg-orange-light)
 }
+.text_orange__light {
+  color: var(--bg-orange-light)
+}
 .text_lg {
   font-size: 1.1rem;
 }
@@ -156,7 +159,7 @@ img {
 /* FOOTER */
 .footer__container {
   position: relative;
-  color: white;
+  color: #eee;
   background-color: transparent;
   padding-top: 48px;
   margin-top: 100px;
@@ -187,7 +190,6 @@ img {
   background-position: top center;
 }
 .footer__main {
-  padding: 24px 10px;
   background-color: var(--bg-gray-dark);
 }
 .footer_front {
@@ -222,4 +224,12 @@ img {
 .footer__post-date {
   font-size: 0.7rem;
   color: #888;
+}
+.footer__contact-item {
+  display: flex;
+  gap: 0.5rem;
+  font-size: 13px;
+}
+.footer__contact-item i {
+  font-size: 1.1rem;
 }
