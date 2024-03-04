@@ -222,21 +222,50 @@ img {
 .footer__main {
   background-color: var(--bg-gray-dark);
 }
+.footer__links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  font-size: 0.9rem;
+}
+.footer__links li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.footer__links li span {
+  width: 10px;
+  height: 10px;
+  background: transparent;
+  border-radius: 50%;
+  border: 1px solid #777
+}
+.footer__links li a {
+  color: rgba(255, 255, 255, .62);
+}
+.footer__links li:hover span {
+  border-color: var(--bg-orange-light);
+}
 .footer__text-head {
   color: var(--bg-orange-dark);
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   font-weight: 600;
-  padding-bottom: 1rem;
+  padding-bottom: 1.5rem;
 }
-.footer__post-item:hover i {
-  color: var(--bg-orange-dark)
+.footer__post-item i {
+  color: var(--bg-orange-dark);
 }
 .footer__post-item:hover i {
   color: white
 }
 .footer__post-date {
   font-size: 0.7rem;
+  margin-top: 0.5rem;
   color: #888;
+}
+.footer__post-title {
+  color: rgba(255, 255, 255, .62);
+  font-size: 0.9rem;
 }
 .footer__contact-item {
   display: flex;
@@ -245,6 +274,24 @@ img {
 }
 .footer__contact-item i {
   font-size: 1.1rem;
+}
+.footer__contact-email {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: rgba(239, 211, 199, 0.2);
+}
+.footer__contact-email .icon {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-orange-dark);
+  color: white
+}
+.footer__gray-text {
+  color: rgba(255, 255, 255, .62);
 }
 
 .footer__copyright {
