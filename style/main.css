@@ -187,6 +187,66 @@ img {
   background-color: var(--bg-orange-main);
 }
 
+
+/* header */
+.swiper-header {
+  width: 100%; /* Adjust width as needed */
+  position: relative;
+  height: 400px;
+}
+.swiper-wrapper {
+  display: flex;
+}
+.swiper-header .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.swiper-slide {
+  width: 100%;
+  text-align: center; /* Center text and button */
+  position: relative;
+}
+.swiper-slide a {
+  border: 1px solid white;
+  padding: 0.7rem 1.2rem;
+  border-radius: 0.5rem;
+  transition: all 250ms;
+}
+.swiper-slide a:hover {
+  background-color: white;
+  color: var(--bg-gray-dark)
+}
+.swiper-button-next,
+.swiper-button-prev {
+  --swiper-navigation-size: 2rem;
+  --swiper-navigation-color: white;
+}
+.slide_content__container {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent background */
+}
+.slide_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  text-align: center;
+  color: #fff; /* White text */
+  transform: translateY(-100%);
+  opacity: 0; /* Initially hide text and button */
+  transition: transform 1s .5s, opacity 1s .5s;
+}
+.swiper-slide.swiper-slide-active .slide_content {
+  transform: translateY(0);
+  opacity: 1;
+}
+
 /* FOOTER */
 .footer__container {
   position: relative;
