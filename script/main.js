@@ -19,8 +19,17 @@ var swiper = new Swiper('.swiper-header', {
 });
 
 var swiperArticles = new Swiper('.swiper-articles', {
-  slidesPerView: 4,
-  spaceBetween: 20,
+  slidesPerView: 1,
+  breakpoints: {
+    556: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    850: {
+      slidesPerView: 4,
+      spaceBetween: 20,
+    }
+  },
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
