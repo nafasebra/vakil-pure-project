@@ -247,6 +247,51 @@ img {
   opacity: 1;
 }
 
+/* SERVICES */
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 50px 10px;
+}
+.service__head {
+  text-align: center;
+  font-size: 23px;
+  font-weight: 700;
+}
+.service__card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.service__card--image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  overflow: hidden;
+  width: 100%;
+  height: 200px;
+}
+.service__card--image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.service__card-body {
+  text-align: center;
+}
+.service__card-body h3 {
+  margin-bottom: 12px;
+  color: var(--bg-gray-light);
+  font-size: 16px;
+  font-weight: 700;
+}
+.service__card-body p {
+  font-size: 13px;
+  line-height: 2em;
+}
+
 /* FOOTER */
 .footer__container {
   position: relative;
