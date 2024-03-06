@@ -529,6 +529,42 @@ section {
   border-color: var(--bg-orange-light);
 }
 
+/* SOCIAL MEDIA SECTION */
+.small__container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.social__card {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  color: white
+}
+.social__card.blue {
+  background-color: #1177cd;
+}
+.social__card.pink {
+  -webkit-background: linear-gradient(150deg, #ED2C12 11%, #9E007C 91%);
+  -moz-background: linear-gradient(150deg, #ED2C12 11%, #9E007C 91%);
+  background: linear-gradient(150deg, #ED2C12 11%, #9E007C 91%);
+}
+.social__card.green {
+  -webkit-background: linear-gradient(70deg, #2D6907 0%, #0B4C05 62%);
+  -moz-background: linear-gradient(70deg, #2D6907 0%, #0B4C05 62%);
+  background: linear-gradient(70deg, #2D6907 0%, #0B4C05 62%);
+}
+.social__card i{
+  font-size: 2rem;
+}
+.social__card p{
+  font-size: 14px;
+  font-weight: 700;
+}
+
 /* FOOTER */
 .footer__container {
   position: relative;
