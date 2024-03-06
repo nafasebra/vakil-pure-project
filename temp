@@ -1,0 +1,83 @@
+<section id="blog" class="container">
+        <div class="row g-5">
+          <div class="col-sm-12 col-lg-9">
+            <article>
+              <div class="section__head">
+                <i class="fal fa-book"></i>
+                <h2>محتوای بلاگ</h2>
+                <hr />
+              </div>
+              <div class="pt-3 d-flex flex-column gap-3">
+                <div class="row">
+                  <a href="#" class="col-md-4 col-sm-12 col-12 post__card--image" target="_blank">
+                    <img src="assets/images/service.jpg" alt="post-image" />
+                  </a>
+                  <div class="col-md-8 col-sm-12 col-12 post__card--body">
+                    <h2 class="post__card--title"><a href="#" target="_blank">گرفتن سند برای زمین قولنامه ای و املاک بدون سند</a></h2>
+                    <div class="desc">
+                      سند گرفتن برای زمین و املاک قولنامه ای به چه صورت است ؟ در ادامه قصد داریم شما را با قوانین و مراحل جهت اقدام در این زمینه اشنا کنیم. قولنامه تعهد و نوشته&zwnj;ای است که اغلب حاکی از توافق ...
+                    </div>
+                    <div class="post_meta w-100 d-flex align-items-center gap-2">
+                      <div class="post_date">
+                        <i class="fal fa-clock"></i>
+                        تاریخ انتشار
+                        <span>21  مهر  1398</span>
+                      </div>
+                      <hr />
+                      <a href="#" target="_blank" title="ادامه مطلب" class="read_more">
+                        <i class="fa-regular fa-arrow-left"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="col-sm-12 col-lg-3"></div>
+        </div>
+      </section>
+
+
+.post__card {
+  gap: 0.75rem;
+}
+.post__card--image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+.post__card--title {
+  font-size: 13px;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+  line-height: 1.8em;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+.post__card--title a {
+  display: block;
+}
+.post__card--body .desc {
+  line-height: 1.8em;
+  font-size: 12px;
+  opacity: .8;
+  min-height: 95px;
+}
+.post_date {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 12px;
+}
+.post_meta hr {
+  border-style: dashed;
+  flex-grow: 1;
+}
+.post_meta .read_more {
+  border-style: dashed;
+  flex-grow: 1;
+}
+
