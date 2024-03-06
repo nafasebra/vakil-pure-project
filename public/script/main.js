@@ -41,8 +41,22 @@ var swiperArticles = new Swiper('.swiper-articles', {
 });
 
 var swiper = new Swiper('.swiper-brands', {
-  slidesPerView: 6,
+  slidesPerView: 2,
   spaceBetween: 20,
+  breakpoints: {
+    556: {
+      slidesPerView: 3,
+    },
+    750: {
+      slidesPerView: 4,
+    },
+    856: {
+      slidesPerView: 5,
+    },
+    990: {
+      slidesPerView: 6,
+    },
+  },
   autoplay: {
     delay: 5000, // Change the delay value (in milliseconds) as per your preference
     disableOnInteraction: false,
