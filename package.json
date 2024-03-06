@@ -4,18 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "ts-node ./compiler.ts"
+    "build": "nodemon -w ./src -w ./public -x 'node compiler.js' -e ts,js,ejs",
+    "serve": "lite-server --baseDir ./dist --port 3000",
+    "dev": "run-p build serve"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "ejs": "^3.1.9"
-  },
   "devDependencies": {
-    "@types/ejs": "^3.1.5",
-    "@types/node": "^20.11.24",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.3.3"
+    "ejs": "^3.1.9",
+    "lite-server": "^2.6.1",
+    "nodemon": "^3.1.0",
+    "npm-run-all2": "^6.1.2"
   }
 }
