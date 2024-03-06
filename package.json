@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "nodemon -w ./src -w ./public -x \"node compiler.js\" -e ts,js,ejs,css",
+    "build": "node compiler.js",
+    "build:dev": "nodemon -w ./src -w ./public -x \"node compiler.js\" -e ts,js,ejs,css",
     "serve": "lite-server --baseDir dist --port 3000",
-    "dev": "run-p build serve"
+    "dev": "run-p build:dev serve"
   },
   "keywords": [],
   "author": "",
