@@ -39,3 +39,13 @@ var swiperArticles = new Swiper('.swiper-articles', {
     clickable: true,
   },
 });
+
+var swiper = new Swiper('.swiper-brands', {
+  slidesPerView: 6,
+  spaceBetween: 20,
+  autoplay: {
+    delay: 5000, // Change the delay value (in milliseconds) as per your preference
+    disableOnInteraction: false,
+    pauseOnMouseEnter: true,
+  },
+});
