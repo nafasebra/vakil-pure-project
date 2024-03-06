@@ -1,3 +1,15 @@
+const btn_gototop = document.querySelector('.btn_gotoup')
+
+if(btn_gototop) {
+  btn_gototop.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    })
+  })
+}
+
 // slider instance
 var swiper = new Swiper('.swiper-header', {
   loop: true,
