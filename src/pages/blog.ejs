@@ -2,11 +2,11 @@
 <html lang="fa" dir="rtl">
   <head>
     <%- include('../layout/headers') -%>
-    <title>صفحه اصلی | وکیل دادگستر</title>
+    <title>صفحه بلاگ | وکیل دادگستر</title>
   </head>
   <body>
     <%- include("../layout/navbar") -%> <%- include("../layout/drawer") -%>
-
+    
     <main class="container">
       <div class="row py-4">
         <div class="col-12 col-lg-8 pe-4">
@@ -22,7 +22,9 @@
           </div>
           <%- include("../components/pagination") -%>
         </div>
-        <div class="col-12 col-lg-4 ps-4"></div>
+        <div class="col-12 col-lg-4 ps-4">
+          <%- include("../components/last-posts") -%>
+        </div>
       </div>
     </main>
 
