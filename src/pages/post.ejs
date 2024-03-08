@@ -7,7 +7,29 @@
   <body>
     <%- include("../layout/navbar") -%> <%- include("../layout/drawer") -%>
 
-    <main class="container"></main>
+    <main class="container">
+      <%- include("../components/post/page-url") -%>
+      <div class="row g-5 py-4">
+        <div class="col-12 col-lg-8">
+          <div class="bg-white rounded-3 shadow-sm p-4">
+            <%- include("../components/post/header") -%>
+            <%- include("../components/post/body") -%>
+          </div>
+          <div class="section__head my-3">
+            <i class="fal fa-comment-alt-lines"></i>
+            <h2>ارسال دیدگاه</h2>
+            <hr />
+          </div>
+          <%- include("../components/post/comments") -%>
+        </div>
+        <div
+          class="col-12 col-lg-4 d-flex flex-column py-lg-3 sidebar-items-list"
+        >
+          <%- include("../components/last-posts") -%>
+          <%- include("../components/categories") -%>
+        </div>
+      </div>
+    </main>
 
     <%- include("../layout/footer") -%> <%- include('../layout/scripts') -%>
   </body>

@@ -9,7 +9,7 @@
     
     <main class="container">
       <div class="row py-4">
-        <div class="col-12 col-lg-8 pe-4">
+        <div class="col-12 col-lg-8">
           <div class="section__head">
             <i class="fal fa-book"></i>
             <h2>محتوای بلاگ</h2>
@@ -22,8 +22,9 @@
           </div>
           <%- include("../components/pagination") -%>
         </div>
-        <div class="col-12 col-lg-4 ps-4">
+        <div class="col-12 col-lg-4 d-flex flex-column py-lg-3 sidebar-items-list">
           <%- include("../components/last-posts") -%>
+          <%- include("../components/categories") -%>
         </div>
       </div>
     </main>

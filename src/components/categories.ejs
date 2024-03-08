@@ -1,0 +1,21 @@
+<% var categories = ["آرای وحدت رویه", "داوری", "خدمات ما", "جرائم", "شرکت",
+"قوانین"] %>
+
+<div class="sidebar-card">
+  <div class="sidebar-card__header">
+    <i class="fas fa-turn-down-left"></i>
+    <h3>دسته بندی ها</h3>
+  </div>
+  <div role="list" class="d-flex flex-column align-items-stretch">
+    <% for(const category of categories) { %>
+    <a
+      role="listitem"
+      href="#"
+      class="d-flex align-items-center gap-2 py-2 category-item"
+    >
+      <i class="fas fa-arrow-left"></i>
+      <span><%= category %></span>
+    </a>
+    <% } %>
+  </div>
+</div>
