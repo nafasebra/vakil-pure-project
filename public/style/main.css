@@ -450,6 +450,10 @@ section {
   --swiper-navigation-color: black;
   transition: background 250ms, opacity 250ms;
 }
+.swiper-articles.paginate .swiper-button-next,
+.swiper-articles.paginate .swiper-button-prev {
+  --swiper-navigation-top-offset: 42%;
+}
 .swiper-articles .swiper-button-next:hover,
 .swiper-articles .swiper-button-prev:hover {
   background-color: var(--bg-orange-dark);
