@@ -269,7 +269,6 @@ img {
   justify-content: center;
   gap: 0.75rem;
   padding: 5px 10px;
-  border: 1px solid #444;
   height: 27px;
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
@@ -282,6 +281,17 @@ img {
   -ms-transition: all 0.25s ease;
   -o-transition: all 0.25s ease;
   transition: all 0.25s ease;
+}
+.btn_gotoup .line {
+  width: 1px;
+  height: 13px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.btn_gotoup span {
+  font-size: 0.7rem;
+}
+.btn_gotoup li {
+  font-size: 0.9rem;
 }
 .btn_gotoup:hover,
 .btn_orange--black:hover,
@@ -578,8 +588,8 @@ section {
   align-items: center;
   text-align: center;
   gap: 1rem;
-  background-color: var(--bg-gray-light);
-  padding: 1.25rem 2rem;
+  background-color: #1E2836;
+  padding: 1.25rem 2.25rem;
   border-radius: 1rem;
   border: 1px solid transparent;
   transition: border 250ms;
@@ -725,6 +735,7 @@ section {
   padding-bottom: 1.5rem;
 }
 .footer__post-item i {
+  transform: translateY(5px);
   color: var(--bg-orange-light);
 }
 .footer__post-item:hover i {
