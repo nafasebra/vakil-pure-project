@@ -822,6 +822,10 @@ section {
   --bs-offcanvas-padding-y: 0;
 }
 
+.swiper-button-disabled {
+  display: none;
+}
+
 .link-list {
   display: flex;
   flex-direction: column;

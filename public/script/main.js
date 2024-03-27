@@ -52,6 +52,7 @@ var swiperArticles = new Swiper('.swiper-articles', {
   },
 });
 
+
 var swiper = new Swiper('.swiper-brands', {
   slidesPerView: 2,
   spaceBetween: 20,
