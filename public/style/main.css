@@ -818,6 +818,7 @@ section {
   --bs-offcanvas-padding-y: 1.5rem;
 }
 .custom-offcanvas-body {
+  height: 100vh;
   --bs-offcanvas-padding-y: 0;
 }
 
@@ -1115,8 +1116,34 @@ section {
   background-color: #e7e7e7;
   font-size: 0.7rem;
   color: #777;
-  padding: 0.5rem 1rem 0.5rem 1rem;
+  padding: 0.5rem 0.5rem 0.5rem 1rem;
   border-radius: 0.4rem;
+}
+.custom-breadcrumb li {
+  position: relative;
+  padding: 0.5rem 0.5rem 0.5rem 1rem;
+}
+.custom-breadcrumb li::before,
+.custom-breadcrumb li::after {
+  position: absolute;
+  top: 0;
+  width: 0;
+  height: 0;
+  content: '';
+  border-top: 18px solid transparent;
+  border-bottom: 18px solid transparent;
+}
+.custom-breadcrumb li::after {
+  left: -12px;
+  z-index: 2;
+  border-right: 13px solid #fff;
+}
+.custom-breadcrumb li::before {
+  left: -10px;
+  z-index: 3;
+  border-right-color: #e4e4e4;
+  border-right-style: solid;
+  border-right-width: 11px;
 }
 .custom-breadcrumb i {
   color: #ffffff;
