@@ -102,6 +102,7 @@ img {
   visibility: hidden;
   opacity: 0;
   background-color: white;
+  box-shadow: 0 1px 4px 1px rgba(24,24,24,.05);
   transform: translateY(10px);
   transition: opacity 250ms, transform 250ms, visibility 0s 250ms;
   z-index: 997;
@@ -112,7 +113,6 @@ img {
 .dropdown.full .dropdown-inner {
   width: 100%;
   overflow: visible;
-  padding: 1rem 0.75rem;
 }
 .dropdown.full .dropdown-grid div {
   border-left: 1px solid rgba(0, 0, 0, .1);
@@ -135,24 +135,36 @@ img {
   overflow: hidden;
   width: 180px;
   line-height: 15px;
-  padding: 0.75rem;
+  padding: 0.75rem 0;
 }
-.dropdown-inner div {
-  padding: 0 0.5rem;
+.dropdown.full .dropdown-inner div {
+  padding: 0 0.75rem;
   position: relative;
 }
-.dropdown.full .dropdown-inner div::after {
+.dropdown.full .dropdown-grid div::after {
   content: ' ';
   position: absolute;
   top: 0;
-  left: -2px;
-  background: black;
+  right: -1.5px;
+  background: var(--bg-orange-dark);
   opacity: 0.5;
-  width: 4px;
+  width: 3px;
   height: 4px;
+  transition: height 300ms;
 }
-.dropdown.full .dropdown-inner div:last-child:after {
-  display: none;
+.dropdown.full .dropdown-grid div:first-child:after {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: var(--bg-orange-dark);
+  opacity: 0.5;
+  width: 3px;
+  height: 4px;
+  transition: height 300ms;
+}
+.dropdown.full .dropdown-grid div:hover::after {
+  height: 35px;
 }
 .dropdown-inner .dropdown-title {
   font-size: 0.8rem;
